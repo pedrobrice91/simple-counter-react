@@ -5,7 +5,7 @@ import SecondsCounter from "./components/SecondsCounter";
 import reportWebVitals from "./reportWebVitals";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
-let counter = 123456;
+let counter = 0;
 
 setInterval(() => {
   let seconds1 = Math.floor((counter / 1) % 10);
@@ -33,7 +33,7 @@ setInterval(() => {
       />
     </React.StrictMode>
   );
-}, 500);
+}, 1000);
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
